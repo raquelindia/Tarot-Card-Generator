@@ -1,0 +1,87 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Tarot Card Generator</title>
+      </head>
+      <body>
+        <div style="background-image: url('tarot-card-background.jpg');">
+        <h1>Tarot Card Generator</h1>
+      
+          <br>
+          <br>
+          <div id="button">
+          <button onclick="clickGenerate()"><b>GENERATE CARD</b></button>
+            
+          </div>
+          <div id="idresult">
+            <h2 id="result"></h2>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <style>
+              button {
+                color: purple;
+                margin: 100px;
+                  padding: 50px;
+                width: 400px;
+                font-size: 45px;
+                font-family: Copperplate;
+                border-radius: 12px;
+                background-color: lavender;
+              }
+
+              h1 {
+                margin: 0px;
+                color: lavender;
+               font-size: 60px;
+                font-family: Copperplate;
+                text-align: center;
+                padding-top: 100px;
+              }
+
+              #button {
+                display: block;
+                margin: 0 auto;
+                padding-left: 400px;
+                
+              }
+
+              h2 {
+                color: black;
+                text-align: center;
+                padding-bottom: px;
+                background-color: white;
+                width: 250px;
+                height: 100px;
+                padding: 30px;
+                border: 10px solid black;
+                border-radius: 9px;
+                font-family: cursive;
+                font-size: 30px;
+                
+              }
+
+              #idresult {
+                display: block;
+                margin: 0 auto;
+                padding-left: 550px;
+              }
+              </style>
+      </body>
+    
+    <script>
+let cards = ['The Fool', 'The Magician', 'The High Priestess', 'The Empress', 'The Emperor', 'The Hierophant', 'The Lovers', 'The Chariot', 'Strength', 'The Hermit', 'Wheel of Fortune', 'Justice', 'The Hanged Man', 'Death', 'Temperance', 'The Devil', 'The Tower', 'The Star', 'The Moon', 'The Sun', 'Judgement', 'The World', 'Ace of Wands', 'Ace of Cups', 'Ace of Swords', 'Ace of Coins', 'Two of Wands', 'Two of Cups', 'Two of Swords', 'Two of Coins', 'Three of Wands', 'Three of Cups', 'Three of Swords', 'Three of Coins', 'Four of Wands', 'Four of Cups', 'Four of Swords', 'Four of Coins', 'Five of Wands', 'Five of Cups', 'Five of Swords', 'Five of Coins', 'Six of Wands', 'Six of Cups', 'Six of Swords', 'Six of Coins', 'Seven of Wands', 'Seven of Cups', 'Seven of Swords', 'Seven of Coins', 'Eight of Wands', 'Eight of Cups', 'Eight of Swords', 'Eight of Coins', 'Nine of Wands', 'Nine of Cups', 'Nine of Swords', 'Nine of Coins', 'Ten of Wands', 'Ten of Cups', 'Ten of Swords', 'Ten of Coins', 'Page of Wands', 'Page of Wands', 'Page of Cups', 'Page of Swords', 'Page of Coins', 'Knight of Wands', 'Knight of Cups', 'Knight of Swords', 'Knight of Coins', 'Queen of Wands', 'Queen of Cups', 'Queen of Swords', 'Queen of Coins', 'King of Wands', 'King of Cups', 'King of Swords', 'King of Coins'];
+  function generateCard(){
+      let randomCard = cards[Math.floor(Math.random()*cards.length)];
+      return randomCard;
+  } generateCard();
+    function clickGenerate(){
+        document.getElementById("result").innerHTML = generateCard();
+    }
+</script>
+    
+</html>
