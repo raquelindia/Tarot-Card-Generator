@@ -1,1 +1,1 @@
-This is a tarot card generator that I made using Javscript.
+This is a tarot card generator that I made using Javascript.
